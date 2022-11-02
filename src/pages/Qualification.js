@@ -9,7 +9,7 @@ export default function Qualification({work_list}) {
         <section className="qualification section">
             <Container_Introduction
                 title="Where I’ve Worked"
-                subtitle="Some company where I work or stud"
+                subtitle="Some company where I work"
             />
             
             <div className="qualification__container container">
@@ -17,7 +17,7 @@ export default function Qualification({work_list}) {
                 {
                     
                     work_list.map((item) => {
-                        if(item.id == qualification_id) {
+                        if(item.id === qualification_id) {
                             return (
                             <button key={item.id} className="qualification__nav_item active" onClick={() => setQualification_id(item.id)}>
                                 {item.company}

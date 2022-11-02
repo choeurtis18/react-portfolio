@@ -12,9 +12,9 @@ const Skills = (props) => {
             
             <div className="skills__container container">
                 {
-                    props.skills_list.map((item) => {
+                    props.skills_list.map((item, index) => {
                         return (
-                            <Skill key={item.id} value={item} />
+                            <Skill key={index} value={item} />
                         )
                     })  
                 }

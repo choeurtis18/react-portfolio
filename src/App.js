@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 
 import Choeurtis_draw_img from './media/choeurtis_draw.png';
 import perfil_img from './media/perfil.jpg';
-import CV from './media/Label-MEU102934624.pdf';
+import CV from './media/CV-Choeurtis.pdf';
 
 const nav_list = [
   {id:0, link: "home", name: "Home", icon: "uil uil-home"},
@@ -41,6 +41,27 @@ const project_list = [
   {id:1, image: perfil_img, title: "CFS Location", description:"CFS location is a cars location web site. In this site, people can rent a car and consult the list of cars they have rented. In this site, the is an admin page, the administration of the site can manage (add and delete) the cars and the customers. When a customer goes to his page, he can rent a car, look at his shopping cart, his cars and his invoices.", link: "#"}
 ];
 
+var offer_list = [
+  {
+    id:0,
+    title: "Site Vitrine",
+    description: "Création d'un site internet professionnel pour promouvoir votre entreprise et exposer votre travail en ligne.",
+    options: ["creation du site", "design personaliser", "referencement", "accompagnement", "formation"]
+  },
+  {
+    id:1,
+    title: "Site Vitrine + Maintenance",
+    description: "Création d'un site internet professionnel pour promouvoir votre entreprise et exposer votre travail en ligne.",
+    options: ["creation du site", "design personaliser", "maintenance", "referencement", "accompagnement", "formation"]
+  },
+  {
+    id:2,
+    title: "Site e-commerce",
+    description: "Création d'un site e-commerce afin d'augmenter vos ventes et à gérer vos opérations quotidiennes.",
+    options: ["creation du site", "design personaliser", "referencement", "accompagnement", "formation"]
+  },
+];
+
 const skills_list = [
   'HTML', 'JAVASCRIPT', 'JQUERY',
   'REACT', 'PYTHON', 'PHP', 'CSS',
@@ -64,12 +85,11 @@ const App = () => {
         image={Choeurtis_draw_img}
         title={"Hi, I'am Choeurtis"}
         subtitle={"Web devlopper"}
-        content={"Junior web developper, I am still studying and working to become a project manager."}
+        content={"I am a junior web developer with a versatile profile with front-end skills as well as back-end skills. My goal is now to improve my project management skills while continuing to gain experience in development."}
       />
       
       <About
         image={perfil_img}
-        description={"Junior web developper"}
         about_experience_list={about_experience_list}
         cv_link={CV}
       />
@@ -85,6 +105,7 @@ const App = () => {
       <Advertisement_banner
         title={"You have a new project"}
         description={"Don't hesitate to contact me :D"}
+        offer_list={offer_list}
       />
 
       <Projects

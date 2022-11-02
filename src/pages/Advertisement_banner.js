@@ -1,5 +1,6 @@
 import React from 'react';
-import Link_btn from '../components/Link_btn';
+import Offer from '../components/Offer';
+
 const Advertisement_banner = (props) => {
     return (
         <section className="project section">
@@ -8,10 +9,16 @@ const Advertisement_banner = (props) => {
                     <div className="project__data">
                         <h2 className="project__title">{props.title}</h2>
                         <p className="project__description">{props.description}</p>
-                        <Link_btn
-                            link="#contact"
-                            texte="Contact Me"
-                        />
+
+                        <div className="project__info">
+                        {
+                            props.offer_list.map((item) => {
+                                return (
+                                    <Offer key={item.id} item={item}></Offer>
+                                )
+                            })
+                        }
+                        </div>
                     </div>
                 </div>
             </div>
