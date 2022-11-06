@@ -1,0 +1,72 @@
+/*==================== PROJECT IN MIND -> Pop-in CSS ====================*/
+.project__form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(33, 33, 33, 0.8);
+    transform: translateY(60%) scale(0);
+}
+.project__form.form-visible {
+    display: block;
+    transform: translateY(0) scale(1);
+}
+
+.project__form__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--first-color-second);
+    padding: var(--mb-1-5);
+    height: 500px;
+    width: 320px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.project__form__container::-webkit-scrollbar {
+    width: 6px;
+}
+.project__form__container::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+.project__form__container::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+.project__form__container::-webkit-scrollbar-thumb:hover {
+    background: var(--first-color);
+}
+
+.project__form__container_close {
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+    margin: 0 8px 0 0;
+    cursor: pointer;
+}
+
+.project__form__container h3{
+    margin: 0 auto var(--mb-1) auto;
+}
+
+.project__form__container .contact__form {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 568px) {
+    .project__form__container {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .project__form__container {
+        width: 700px;
+    }
+}

@@ -1,7 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Offer from '../components/Offer';
+import Popin from '../components/Popin';
 
 const Advertisement_banner = (props) => {
+    const [popin_data, setPopin_data] = useState("Site Vitrine + Maintenance");
+    const [popin_visible, setPopin_visible] = useState(false);
+
     return (
         <section className="project section">
             <div className="project__bg">
@@ -14,11 +18,13 @@ const Advertisement_banner = (props) => {
                         {
                             props.offer_list.map((item) => {
                                 return (
-                                    <Offer key={item.id} item={item}></Offer>
+                                    <Offer key={item.id} offer={item} setPopin_data={setPopin_data} setPopin_visible={setPopin_visible}></Offer>
                                 )
                             })
                         }
                         </div>
+
+                        <Popin popin_data={popin_data} popin_visible={popin_visible} setPopin_visible={setPopin_visible}></Popin>
                     </div>
                 </div>
             </div>

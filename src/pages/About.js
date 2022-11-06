@@ -6,17 +6,17 @@ const About = (props) => {
     return (
         <section className="about section" id="about">
             <Container_Introduction
-                title="About Me"
-                subtitle="who I am ?"
+                title="A propos de moi"
+                subtitle="Qui suis-je ?"
             />
             <div className="about__container container grid">
                 <img src={props.image} alt="" className="about__img"/>
 
                 <div className="about__data">
                     <div className="about__description">
-                        <p>Hello, my name is Choeurtis and I am a web developer. I started to be interest by computer science in 2018 by learning to code in python. I have created a few small programs and some games.</p><br></br>
-                        <p>After that, I did a DUT in computer science at the IUT of Paris. During this DUT, I learned a lot of things about programming and more particularly about back-end development (php, python, JS, java, C, C++ ...) and algorithms. Thereafter, I wanted to specialize in web development so I did a bachelor in web development at Hetic to specialize in web programming.</p><br></br>
-                        <p>Now my goal is to improve my project management skills while continuing to gain experience in development to become a Product Owner or continue my adventure as a freelancer.</p><br></br>
+                        <p>Bonjour, je m'appelle Choeurtis et je suis développeur web. J'ai commencé à m'intéresser à l'informatique en 2018 en apprenant à coder en python. J'ai créé quelques petits programmes et quelques jeux.</p><br></br>
+                        <p>Après cela, j'ai fait un DUT en informatique à l'IUT de Paris. Durant ce DUT, j'ai appris beaucoup de choses sur la programmation et plus particulièrement sur le développement back-end (php, python, JS, java, C, C++...) et en algorithmie. Par la suite, j'ai voulu me spécialiser dans le développement web, j'ai donc fait un bachelor en développement web à Hetic pour me spécialiser dans la programmation web.</p><br></br>
+                        <p>Mon objectif est maintenant d'améliorer mes compétences en matière de gestion de projet tout en continuant à acquérir de l'expérience dans le domaine du développement pour devenir Product Owner ou poursuivre mon aventure en tant que freelance.</p><br></br>
                     </div>
 
                     <div className="about__info">
@@ -35,7 +35,7 @@ const About = (props) => {
                     <Download_btn
                         className="about__buttons"
                         link={props.cv_link}
-                        texte="Download CV"
+                        texte="Télécharger CV"
                     />
                 </div>
             </div>

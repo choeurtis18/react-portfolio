@@ -13,13 +13,16 @@ import Footer from './components/Footer';
 import Choeurtis_draw_img from './media/choeurtis_draw.png';
 import perfil_img from './media/perfil.jpg';
 import CV from './media/CV-Choeurtis.pdf';
+import { work_list } from './data/workData';
+import { project_list } from './data/projectData';
+import { offer_list } from './data/offerData';
 
 const nav_list = [
-  {id:0, link: "home", name: "Home", icon: "uil uil-home"},
-  {id:1, link: "about", name: "About", icon: "uil uil-user"},
+  {id:0, link: "home", name: "Accueil", icon: "uil uil-home"},
+  {id:1, link: "about", name: "A propos", icon: "uil uil-user"},
   {id:2, link: "skills", name: "Skills", icon: "uil uil-file-alt"},
-  {id:3, link: "portfolio", name: "Portfolio", icon: "uil uil-scenery"},
-  {id:4, link: "contact", name: "Contactme", icon: "uil uil-message"}
+  {id:3, link: "portfolio", name: "Projets", icon: "uil uil-scenery"},
+  {id:4, link: "contact", name: "Me Contacter", icon: "uil uil-message"}
 ];
 const social_list = [
   {id:0, link: "https://www.linkedin.com/in/choeurtis-tchounga-41218a1ab/", icon: "uil uil-linkedin-alt"},
@@ -27,41 +30,10 @@ const social_list = [
   {id:2, link: "https://github.com/choeurtis18", icon: "uil uil-github-alt"},
 ];
 const about_experience_list = [
-  {id:0, date: "03+", atribute: "Year experience"},
-  {id:1, date: "10+", atribute: "Completed project"},
-  {id:2, date: "02+", atribute: "Companies worked"},
+  {id:0, date: "03+", atribute: "Années d'expérience"},
+  {id:1, date: "10+", atribute: "Projets terminés"},
+  {id:2, date: "02+", atribute: "Compagnies où j'ai travaillé"},
 ];
-
-const work_list = [
-  {id:0, name: "UX Developper", company: "B&B Hotels", date: "Septembre 2021 - Septembre 2023", description:"Oat cake bear claw pie muffin muffin bonbon topping. Jujubes toffee dragée oat cake chocolate bar carrot cake dessert wafer cake. Icing jelly-o powder caramels cotton candy dragée oat cake cheesecake jujubes."},
-  {id:1, name: "Web Developer", company: "Vitacolo", date: "Avril 2021 - Juin 2021", description:"Oat cake bear claw pie muffin muffin bonbon topping. Jujubes toffee dragée oat cake chocolate bar carrot cake dessert wafer cake. Icing jelly-o powder caramels cotton candy dragée oat cake cheesecake jujubes."}
-];
-const project_list = [
-  {id:0, image: perfil_img, title: "Descartes Fight", description: "Descartes Fight is a Street Fighter remake with as main subject the IUT of paris, the map game is the the iconic place of the IUT an the characters are the member of my project Team. In this game there is 2 game mode, the fist one is a 1 vs CPU and the second mode is a local 1 vs 1.", link: "#"},
-  {id:1, image: perfil_img, title: "CFS Location", description:"CFS location is a cars location web site. In this site, people can rent a car and consult the list of cars they have rented. In this site, the is an admin page, the administration of the site can manage (add and delete) the cars and the customers. When a customer goes to his page, he can rent a car, look at his shopping cart, his cars and his invoices.", link: "#"}
-];
-
-var offer_list = [
-  {
-    id:0,
-    title: "Site Vitrine",
-    description: "Création d'un site internet professionnel pour promouvoir votre entreprise et exposer votre travail en ligne.",
-    options: ["creation du site", "design personaliser", "referencement", "accompagnement", "formation"]
-  },
-  {
-    id:1,
-    title: "Site Vitrine + Maintenance",
-    description: "Création d'un site internet professionnel pour promouvoir votre entreprise et exposer votre travail en ligne.",
-    options: ["creation du site", "design personaliser", "maintenance", "referencement", "accompagnement", "formation"]
-  },
-  {
-    id:2,
-    title: "Site e-commerce",
-    description: "Création d'un site e-commerce afin d'augmenter vos ventes et à gérer vos opérations quotidiennes.",
-    options: ["creation du site", "design personaliser", "referencement", "accompagnement", "formation"]
-  },
-];
-
 const skills_list = [
   'HTML', 'JAVASCRIPT', 'JQUERY',
   'REACT', 'PYTHON', 'PHP', 'CSS',
@@ -83,9 +55,9 @@ const App = () => {
       <Home
         social_list={social_list}
         image={Choeurtis_draw_img}
-        title={"Hi, I'am Choeurtis"}
-        subtitle={"Web devlopper"}
-        content={"I am a junior web developer with a versatile profile with front-end skills as well as back-end skills. My goal is now to improve my project management skills while continuing to gain experience in development."}
+        title={"Hello, moi c'est Choeurtis"}
+        subtitle={"Developpeur Web"}
+        content={"Je suis un développeur web junior au profil polyvalent avec des compétences front-end ainsi que des compétences back-end. Mon objectif est maintenant d'améliorer mes compétences en gestion de projet tout en continuant à gagner de l'expérience en développement."}
       />
       
       <About
@@ -103,8 +75,8 @@ const App = () => {
       />
 
       <Advertisement_banner
-        title={"You have a new project"}
-        description={"Don't hesitate to contact me :D"}
+        title={"Une idée de projet !"}
+        description={"N'hésitez pas à me contacter :D"}
         offer_list={offer_list}
       />
 

@@ -1,23 +1,21 @@
 import React from 'react';
 
-const Offer = (props) => {
+export default function Offer({offer, setPopin_data, setPopin_visible}) {
+
     return (
         <div className="project__info_item">
-            <span className="project__info_item-title">{props.item.title}</span>
-            <span className="project__info_item-description">{props.item.description}</span>
-            <button className="button project__info_item-details-btn">More details</button>
+            <span className="project__info_item-title">{offer.title}</span>
+            <span className="project__info_item-description">{offer.description}</span>
+            <button className="button project__info_item-details-btn" onClick={function() {setPopin_data(offer.title); setPopin_visible(true) }}>Plus d'information</button>
             <div className="project__info_item-options">
             {
-                props.item.options.map((item, index) => {
+                offer.options.map((item, index) => {
                     return (
-                        <span key={index}><i class="uil uil-check-circle"></i> {item}</span>
+                        <span key={index}><i className="uil uil-check-circle"></i> {item}</span>
                     )
                 })
             }
             </div>
-            
         </div>
     )
 }
-
-export default Offer;

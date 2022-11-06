@@ -1,27 +1,32 @@
 import React from 'react';
+import { useState } from 'react';
+
+import MentionsLegales from '../pages/MentionsLegales';
 
 const Footer = (props) => {
+    const [popin_visible, setPopin_visible] = useState(false);
+
     return (
         <footer className="footer">
             <div className="footer__bg">
                 <div className="footer__container container grid">
                     <div>
                         <h1 className="footer__title">Choeurtis</h1>
-                        <span className="footer__subtitle">Web Developper</span>
+                        <span className="footer__subtitle">Développeur Web</span>
                     </div>
 
                     <ul className="footer__links">
                         <li>
-                            <a href="#about" className="footer__link">About</a>
+                            <a href="#about" className="footer__link">A propos</a>
                         </li>
                         <li>
-                            <a href="#portfolio" className="footer__link">Portfolio</a>
+                            <a href="#portfolio" className="footer__link">Projets</a>
                         </li>
                         <li>
                             <a href="#skills" className="footer__link">Skills</a>
                         </li>
                         <li>
-                            <a href="#contact" className="footer__link">Contact Me</a>
+                            <a href="#contact" className="footer__link">Me Contacter</a>
                         </li>
                     </ul>
 
@@ -35,7 +40,8 @@ const Footer = (props) => {
                     </div>
                 </div>
 
-                <p className="footer__copy">&#169; Choeurtis. All right reserved</p>
+                <p className="footer__copy" to="/legal" onClick={() => setPopin_visible(true)}>&#169; Choeurtis. tous droits réservé - Mentions légales</p>
+                <MentionsLegales popin_visible={popin_visible} setPopin_visible={setPopin_visible}/>
             </div>
         </footer>
     )

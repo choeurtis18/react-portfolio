@@ -7,7 +7,7 @@ const Skills = (props) => {
         <section className="skills section" id="skills">
             <Container_Introduction
                 title="Skills"
-                subtitle="My skills"
+                subtitle="Mes skills"
             />
             
             <div className="skills__container container">
@@ -18,7 +18,6 @@ const Skills = (props) => {
                         )
                     })  
                 }
-                
             </div>
         </section>
     )

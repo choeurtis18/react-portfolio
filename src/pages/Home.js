@@ -45,7 +45,7 @@ const Home = (props) => {
                         </p>
                         <Link_btn
                             link="#contact"
-                            texte="Contact Me"
+                            texte="Me Contacter"
                         />
                     </div>
                 </div>

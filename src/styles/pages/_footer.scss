@@ -1,0 +1,126 @@
+/*==================== FOOTER ====================*/
+.footer {
+    padding-top: 2rem;
+}
+
+.fooer__container {
+    row-gap: 3.5rem;
+}
+
+.footer__bg {
+    background-color: var(--first-color-second);
+    padding: 2rem 0 3rem;
+}
+
+.footer__title {
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-0-25);
+}
+
+.footer__subtitle {
+    font-size: var(--small-font-size);
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.footer__link:hover {
+    color: var(--first-color-lighter);
+}
+
+.footer__social {
+    font-size: 1.25rem;
+    margin-right: var(--mb-1-5);
+}
+
+.footer__social:hover {
+    color: var(--first-color-lighter);
+}
+
+.footer__copy {
+    font-size: var(--small-font-size);
+    text-align: center;
+    color: #fff;
+    margin-top: var(--mb-3);
+    cursor: pointer;
+}
+
+.footer__title, 
+.footer__subtitle,
+.footer__link,
+.footer__social {
+    color: #fff;
+}
+
+.mention__card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(33, 33, 33, 0.8);
+    transform: translateY(60%) scale(0);
+}
+.mention__card.mention-visible {
+    display: block;
+    transform: translateY(0) scale(1);
+}
+.mention__card__container_close {
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-semi-bold);
+    margin: 0 8px 0 0;
+    cursor: pointer;
+}
+
+.mention__card__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--first-color-second);
+    padding: var(--mb-1-5);
+    height: 500px;
+    width: 90%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.mention__card__container::-webkit-scrollbar {
+    width: 6px;
+}
+.mention__card__container::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+.mention__card__container::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+.mention__card__container::-webkit-scrollbar-thumb:hover {
+    background: var(--first-color);
+}
+
+@media screen and (min-width: 768px) {
+    .footer__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer__bg {
+        padding: 3rem 0 3.5rem;
+    }
+    .footer__links {
+        flex-direction: row;
+        column-gap: 2rem;
+    }
+    .footer__socials {
+        justify-self: flex-end;
+    }
+    .footer__copy {
+        margin-top: 4.5rem;
+    }
+}
