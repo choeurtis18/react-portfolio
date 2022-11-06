@@ -12,7 +12,7 @@ const Projects = (props) => {
         <section className="portfolio section" id="portfolio">
             <Container_Introduction
                 title="Projets"
-                subtitle="mes projets"
+                subtitle="Mes projets"
             />
             
             <div className="portfolio__container container">
