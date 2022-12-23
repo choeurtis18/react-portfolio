@@ -4,9 +4,7 @@ export default function Offer({offer, setPopin_data, setPopin_visible}) {
 
     return (
         <div className="project__info_item">
-            <span className="project__info_item-title">{offer.title}</span>
-            <span className="project__info_item-description">{offer.description}</span>
-            <button className="button project__info_item-details-btn" onClick={function() {setPopin_data(offer.title); setPopin_visible(true) }}>Plus d'information</button>
+            <span className="project__info_item-title">{offer.title}</span>            
             <div className="project__info_item-options">
             {
                 offer.options.map((item, index) => {
@@ -16,6 +14,9 @@ export default function Offer({offer, setPopin_data, setPopin_visible}) {
                 })
             }
             </div>
+            <span className="project__info_item-description">{offer.description}</span>
+            <button className="button project__info_item-details-btn" onClick={function() {setPopin_data(offer.title); setPopin_visible(true) }}>Plus d'information</button>
+
         </div>
     )
 }
