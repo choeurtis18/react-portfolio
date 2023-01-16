@@ -11,7 +11,7 @@ import Contact_me from './pages/Contact_me';
 import Footer from './components/Footer';
 
 import Choeurtis_draw_img from './media/choeurtis_draw.png';
-import perfil_img from './media/perfil.jpg';
+import dev_img from './media/setup_dev.jpeg';
 import CV from './media/CV-Choeurtis.pdf';
 import { work_list } from './data/workData';
 import { project_list } from './data/projectData';
@@ -61,7 +61,7 @@ const App = () => {
       />
       
       <About
-        image={perfil_img}
+        image={dev_img}
         about_experience_list={about_experience_list}
         cv_link={CV}
       />

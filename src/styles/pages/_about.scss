@@ -41,10 +41,12 @@
 
 @media screen and (min-width: 768px) {
     .about__container {
-        column-gap: 5rem;
+        column-gap: 2rem;
     }
     .about__img {
         width: 350px;
+        height: 100%;
+        object-fit: cover;
     }
     .about__description {
         text-align: inherit;

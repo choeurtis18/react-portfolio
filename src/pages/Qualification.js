@@ -8,8 +8,8 @@ export default function Qualification({work_list}) {
     return (
         <section className="qualification section">
             <Container_Introduction
-                title="Où est-ce que j'ai travaillé ?"
-                subtitle="Quelques compagnies dans lesquelles j'ai travaillé"
+                title="Où est-ce que j'ai travaillé et étudié ?"
+                subtitle="Mon parcours"
             />
             
             <div className="qualification__container container">

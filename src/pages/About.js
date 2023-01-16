@@ -14,8 +14,8 @@ const About = (props) => {
 
                 <div className="about__data">
                     <div className="about__description">
-                        <p>Bonjour, je m'appelle Choeurtis et je suis développeur web. J'ai commencé à m'intéresser à l'informatique en 2018 en apprenant à coder en python. J'ai créé quelques petits programmes et quelques jeux.</p><br></br>
-                        <p>Après cela, j'ai fait un DUT en informatique à l'IUT de Paris. Durant ce DUT, j'ai appris beaucoup de choses sur la programmation et plus particulièrement sur le développement back-end (php, python, JS, java, C, C++...) et en algorithmie. Par la suite, j'ai voulu me spécialiser dans le développement web, j'ai donc fait un bachelor en développement web à Hetic pour me spécialiser dans la programmation web.</p><br></br>
+                        <p>Ma passion pour l’informatique débute en 2018 lorsque je découvre Python. C’est en m’amusant à créer des petits jeux en python que j’ai décidé de me tourner vers le domaine de l’informatique.</p><br></br>
+                        <p>Après le bac, j’ai donc réaliser un DUT informatique à l’IUT de Paris afin de monter en compétences et en apprendre plus sur le domaine. Suite à cela, je me suis spécialiser dans le développement web avec une formation en bachelor web au sein d’Hetic.</p><br></br>
                         <p>Mon objectif est maintenant d'améliorer mes compétences en matière de gestion de projet tout en continuant à acquérir de l'expérience dans le domaine du développement pour devenir Product Owner ou poursuivre mon aventure en tant que freelance.</p><br></br>
                     </div>
 

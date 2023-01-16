@@ -252,7 +252,6 @@ img {
 
 /* For medium devices */
 @media screen and (min-width: 568px) {
-  .about__container,
   .portfolio__content,
   .contact__container,
   .footer__container {
@@ -285,6 +284,10 @@ img {
   .main,
   .footer__container {
     padding: 0 1rem;
+  }
+
+  .about__container {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .change-theme {

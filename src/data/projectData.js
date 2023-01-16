@@ -1,7 +1,7 @@
-import leafup_img from '../media/leafup_img.png';
+import leafup_img from '../media/LeafUp11.gif';
 import descartes_figth_img from '../media/descartes_figth_img.png';
-import aldibnb from '../media/aldibnb_img.png';
-import cfslocation_img from '../media/cfslocation_img.png';
+import aldibnb from '../media/aldibnb.gif';
+import cfslocation_img from '../media/cfslocation_img.jpeg';
 
 export const project_list = [
   {
