@@ -1,7 +1,7 @@
 import leafup_img from '../media/LeafUp11.gif';
 import descartes_figth_img from '../media/descartes_figth_img.png';
 import aldibnb from '../media/aldibnb.gif';
-import cfslocation_img from '../media/cfslocation_img.jpeg';
+import header_img from '../media/header-img.jpg';
 
 export const project_list = [
   {
@@ -30,10 +30,10 @@ export const project_list = [
   },
   {
     id:3, 
-    image: cfslocation_img, 
-    title: "CFS Location", 
-    description:"CFS location est un site de location de voiture dans lequel les utilisateurs peuvent consulter et louer des voitures. Ce site possède 2 types de rôle, un administrateur qui gère les voitures et les utilisateurs et un utilisateur qui consulte les véhicules et gérer ses propres annonces.", 
-    link: "https://github.com/choeurtis18/PwebLocationVoiture",
-    project_info: ['PHP', 'MCV', '2021']
+    image: header_img, 
+    title: "LeBonCoin-Project-Symfony", 
+    description:"LeBonCoin est un site dans lequel les utilisateurs peuvent acheter diverse objets, donner leurs avis sur les objets mais également mettre une note à ceux-ci.", 
+    link: "https://github.com/choeurtis18/LeBonCoin-Project-Symfony",
+    project_info: ['PHP', 'Symfony', '2022']
   },
 ];

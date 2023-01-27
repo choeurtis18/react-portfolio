@@ -35,7 +35,7 @@ const about_experience_list = [
   {id:2, date: "02+", atribute: "Compagnies où j'ai travaillé"},
 ];
 const skills_list = [
-  'HTML', 'JAVASCRIPT', 'JQUERY', 'FIGMA'
+  'HTML', 'JAVASCRIPT', 'JQUERY', 'FIGMA',
   'REACT', 'PYTHON', 'PHP', 'CSS',
   'Jira', 'NODEJS', 'JAVA',
   'Team Manage', 'SQL'

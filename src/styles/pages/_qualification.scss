@@ -1,13 +1,19 @@
 /*==================== QUALIFICATION ====================*/
 .qualification__container {
     display: flex;
+    flex-wrap: wrap;
+}
+.qualification__nav {
+    display: flex;
+    width: 100%;
+    margin-bottom: var(--mb-0-75);
 }
 .qualification__nav_item {
     display: flex;
     width: 100%;
 
     border: none;
-    border-left: 2px solid var(--first-color-second);
+    border-bottom: 2px solid var(--first-color-second);
     text-decoration: none;
     padding: 1rem;
 
@@ -15,7 +21,7 @@
     background-color: transparent;
 }
 .qualification__nav_item.active {
-    border-left: 2px solid var(--title-color);
+    border-bottom: 2px solid var(--title-color);
 }
 .qualification__nav_item:hover {
     background-color: var(--input-color);
