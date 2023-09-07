@@ -1,5 +1,5 @@
 import React, { useRef }  from 'react';
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 const Contact_Form = (props) => {
     const form = useRef();
@@ -7,7 +7,7 @@ const Contact_Form = (props) => {
     const sendEmail = (e) => {
       e.preventDefault();
   
-      emailjs.sendForm('service_pieaja6', 'template_3sdc7j4', form.current, 'S0px_8GQaTomUv03G')
+      emailjs.sendForm('service_emailjs', 'template_emailjs', form.current, 'o2QkELT_3A_pPSQuh')
         .then((result) => {
             console.log(result.text);
             window.alert('message envoyé');
