@@ -53,14 +53,17 @@ function applyTranslations() {
     const socials = document.querySelectorAll('#banner-section-socials');
     const socialsData = t.banner.socials;
 
-    socials.forEach((social, index) => {
-        socialsData.forEach(item => {
-            var html = `
-            <a href="${item.url}" target="_blank" class="banner-section-social-icon">
-                <li><i class="${item.iconClass}"></i></li>
-            </a>
-            `;
+    socials.forEach((social) => {
+        socialsData.forEach((item, index) => {
+            const id = `social-link-${item.text}`;
 
+            const html = `
+                <li>
+                    <a href="${item.url}" target="_blank" class="banner-section-social-icon" id="${id}" >
+                    <i class="${item.iconClass}"></i>
+                    </a>
+                </li>
+            `;
             social.insertAdjacentHTML('beforeend', html);
         });
     });
@@ -141,18 +144,51 @@ function applyTranslations() {
     const footerIcons = document.querySelectorAll('#footer-section-icons');
     const footerSocialsData = t.contact.footer.socials;
 
-    footerIcons.forEach((social, index) => {
-        footerSocialsData.forEach(item => {
-            var html = `<li>
-                <a href="${item.url}" target="_blank" class="banner-section-social-icon">
-                    <i class="${item.iconClass}"></i>
-                </a>
-            </li>`;
+    footerIcons.forEach((social) => {
+        footerSocialsData.forEach((item, index) => {
+            const id = `footer-link-${item.text}`;
 
+            const html = `
+                <li>
+                    <a href="${item.url}" target="_blank" class="banner-section-social-icon" id="${id}" >
+                    <i class="${item.iconClass}"></i>
+                    </a>
+                </li>`;
             social.insertAdjacentHTML('beforeend', html);
         });
     });
 }
+
+window.addEventListener('click', function (event) {
+    const t = translations[currentLang];
+    const footerSocialsData = t.contact.footer.socials;
+
+    footerSocialsData.forEach((item, index) => {
+        const id = `footer-link-${item.text}`;
+        const selector = `#${id}`;
+
+        if (event.target.closest(selector)) {
+            console.log(`Opening URL ${item.url}`);
+            window.open(item.url, '_blank');
+            event.preventDefault();
+        }
+    });    
+
+    const socialsData = t.banner.socials;
+    socialsData.forEach((item, index) => {
+        const id = `social-link-${item.text}`;
+        const selector = `#${id}`;
+
+        if (event.target.closest(selector)) {
+            event.preventDefault();
+            console.log(`Opening URL ${item.url}`);
+            window.open(item.url, '_blank');
+            event.preventDefault();
+        }
+        
+    });    
+});
+
 
 $(function () {
 
