@@ -66,7 +66,6 @@ function applyTranslations() {
             a.addEventListener('click', (e) => {
                 e.preventDefault();
                 const url = a.getAttribute('data-url');
-                console.log(`Opening URL: ${url}`);
                 window.open(url, '_blank');
             });
 
@@ -165,7 +164,6 @@ function applyTranslations() {
             a.addEventListener('click', (e) => {
                 e.preventDefault(); // empêche navigation vers #
                 const url = a.getAttribute('data-url');
-                console.log(`Opening footer URL: ${url}`);
                 window.open(url, '_blank');
             });
 
@@ -173,8 +171,25 @@ function applyTranslations() {
             container.appendChild(li);
         });
     });
-}
 
+    document
+    .getElementById("social-link-saros")
+    .addEventListener("click", function (e) {
+        e.preventDefault();
+        const url = this.getAttribute("data-url");
+        console.log(`Opening ${url}`);
+        window.open(url, "_blank");
+    });
+
+    document
+    .getElementById("footer-link-saros")
+    .addEventListener("click", function (e) {
+        e.preventDefault();
+        const url = this.getAttribute("data-url");
+        console.log(`Opening ${url}`);
+        window.open(url, "_blank");
+    });
+}
 
 $(function () {
 
