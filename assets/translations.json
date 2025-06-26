@@ -1,0 +1,298 @@
+{
+  "fr": {
+    "meta": {
+      "title": "Portfolio de Choeurtis Tchounga - Chef de projet technique",
+      "description": "Portfolio de Choeurtis Tchounga, chef de projet technique et développeur web. Découvrez mes projets et mon parcours professionnel."
+    },
+    "preloader": {
+      "line1": "Chef de",
+      "line2": "Projet",
+      "line3": "Technique",
+      "domain": "sarosagency.fr"
+    },
+    "navbar": {
+      "logo": "C.",
+      "back_to_top": "Retour en haut",
+      "menu": {
+        "langue": "Switch en EN"
+      }
+    },
+    "banner": {
+      "title": "Choeurtis Tchounga",
+      "role": "Chef de projet Technique",
+      "description": "Chef de projet technique, je dispose d’une double compétence en développement web et en gestion de projet, ce qui me permet de piloter efficacement l’ensemble du cycle de vie d’un projet : conception, développement, recette, mise en production et suivi. Mon objectif est d'assurer la réussite des projets en livrant des solutions fiables, qualitatives et alignées aux besoins des clients.",
+      "cta": {
+        "text": "Ouvir mon CV",
+        "link": "/assets/CV-Choeurtis.pdf"
+      },
+      "socials": [
+        { "url": "https://www.linkedin.com/in/choeurtis-tchounga-41218a1ab/", "iconClass": "fab fa-linkedin" },
+        { "url": "https://github.com/choeurtis18", "iconClass": "fab fa-github" }
+      ],
+      "scroll_text": "Click et Scroll - Click et Scroll - "
+    },
+    "about": {
+      "title1": "A propos",
+      "title2": "de moi",
+      "text1": "Moi c'est Choeurtis, chef de projet technique et développeur web, passionné par l’informatique. J’ai acquis une solide expérience en gestion de projet, coordination d’équipes, suivi de planning et budget, ainsi qu’en rédaction de spécifications techniques et recette.",
+      "text2": "En tant que développeur, je maîtrise les technologies React, Node.js, Symfony et SQL, ce qui me permet de comprendre et proposer des solutions techniques efficaces et adaptées aux besoins des clients.",
+      "image": {
+        "alt": "Programmeur au travail",
+        "src": "/assets/images/Programmeur au travail.jpg"
+      }
+    },
+    "experience": {
+      "subtitle": "Focus sur mon parcours profesionnel.",
+      "title": "Mes expériences Professionel",
+      "slides": [
+        {
+          "title": "Chef de projet technique",
+          "company": "Spin Interactive",
+          "description": "J’ai piloté des projets de bout en bout, de la phase de cadrage à la livraison : gestion d’équipe, planification, suivi des tickets, plannings et budgets. J’ai rédigé les spécifications, mis en place les recettes, réalisé les tests et assuré un lien constant avec les clients pour garantir la qualité et la cohérence des livrables."
+        },
+        {
+          "title": "UX Developer – Intégrateur web",
+          "company": "B&B Hotels Group",
+          "description": "En charge des A/B Tests, j’ai géré tout le processus : conception, développement, mise en production et analyse. J’ai défini des KPIs, piloté la roadmap avec les équipes internationales et travaillé en anglais au quotidien. En parallèle, je gérais le support technique, documentais les projets et assurais leur continuité via des processus clairs et des passations structurées."
+        },
+        {
+          "title": "Développeur web",
+          "company": "Vitacolo",
+          "description": "Chez Vitacolo, j’ai dockerisé les différentes plateformes de l’association et développé plusieurs algorithmes et endpoints pour interconnecter les systèmes existants. J’ai également assuré la gestion des bases de données sur des projets développés en PHP et Django."
+        }
+      ]
+    },
+    "projects": {
+      "title": "Quelques-uns de mes projets",
+      "slides": [
+        {
+          "image": "/assets/projects/project1/image.jpg",
+            "alt": "PlayLink Image",
+            "category": "TECHNOLOGIES",
+            "technologies": "Flutter / React / Node.JS / PostgreSQL",
+            "title": "PlayLink",
+            "description": "PlayLink est une application mobile conçue pour animer les soirées entre amis, en famille ou en couple. Elle offre une collection de jeux simples visant à renforcer les liens sociaux entre les joueurs, en favorisant la déduction, la rapidité, le bluff et les débats.",
+            "cta": {
+              "text": "Voir le projet",
+              "link": "/assets/projects/project1/cahierDesCharges.pdf"
+            }          
+        },
+        {
+          "image": "/assets/projects/project2/image.jpg",
+            "alt": "EpiDrive Image",
+            "category": "TECHNOLOGIES",
+            "technologies": "Next.JS / Node.JS / PostgreSQL",
+            "title": "EpiDrive",
+            "description": "EpiDrive est une plateforme de drive alimentaire qui intègre l'intelligence artificielle (IA) pour simplifier et enrichir l'expérience d'achat en ligne.",
+            "cta": {
+              "text": "Voir le projet",
+              "link": "/assets/projects/project2/cahierDesCharges.pdf"
+            }          
+        },
+        {
+          "image": "/assets/projects/project3/image.jpg",
+          "alt": "IZI REMPLA Image",
+          "category": "TECHNOLOGIES",
+          "technologies": "React / Node.JS / MySQL",
+          "title": "IZI REMPLA",
+          "description": "La plateforme IZI Rempla vise à digitaliser la mise en relation entre le professionnel liberal et son remplaçant à travers une application web.",
+          "cta": {
+            "text": "Voir le projet",
+            "link": "/assets/projects/project3/cahierDesCharges.pdf"
+          }          
+        },
+        {
+            "image": "/assets/projects/project4/image.jpg",
+            "alt": "Cotisation Management Image",
+            "category": "TECHNOLOGIES",
+            "technologies": "React / Node.JS / MySQL",
+            "title": "Cotisation Management",
+            "description": "Développer une application web responsive, sécurisée permettant le suivi précis et en temps réel des finances de l'association A.S.O",
+            "cta": {
+              "text": "Voir le projet",
+              "link": "/assets/projects/project4/cahierDesCharges.pdf"
+            }          
+        },
+        {
+          "image": "/assets/projects/project5/image.jpg",
+          "alt": "Saline Royale Academy Image",
+          "category": "TECHNOLOGIES",
+          "technologies": "React / Node.JS / MySQL",
+          "title": "Saline Royale Academy",
+          "description": "Le projet visait à refondre le site de la Saline Royale Academy pour le rendre plus moderne et interactif. L’objectif était de transformer la plateforme en une expérience d’apprentissage engageante, en intégrant des éléments de gamification comme des quiz, des badges et diverses features visant à stimuler la motivation des apprenants.",
+          "cta": {
+            "text": "Voir le projet",
+            "link": "/assets/projects/project5/cahierDesCharges.pdf"
+          }          
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contactez Moi !",
+      "form": {
+        "action": "https://formspree.io/f/xqabgvpe",
+        "method": "POST",
+        "name": "Votre nom",
+        "email": "Votre mail",
+        "message": "Votre message",
+        "submit": "Envoyer"
+      },
+      "footer": {
+        "brand": "Choeurtis.",
+        "socials": [
+          { "url": "https://www.linkedin.com/in/choeurtis-tchounga-41218a1ab/", "iconClass": "fab fa-linkedin" },
+          { "url": "https://github.com/choeurtis18", "iconClass": "fab fa-github" }
+        ],
+        "copyright": "© Copyright 2025 - Choeurtis. All Rights Reserved."
+      }
+    }
+  },
+  "en": {
+    "meta": {
+      "title": "Portfolio of Choeurtis Tchounga - Technical Project Manager",
+      "description": "Portfolio of Choeurtis Tchounga, technical project manager and web developer. Discover my projects and professional background."
+    },
+    "preloader": {
+      "line1": "Technical",
+      "line2": "Project",
+      "line3": "Manager",
+      "domain": "sarosagency.fr"
+    },
+    "navbar": {
+      "logo": "C.",
+      "back_to_top": "Back to top",
+      "menu": {
+        "langue": "Switch to FR"
+      }
+    },
+    "banner": {
+      "title": "Choeurtis Tchounga",
+      "role": "Technical Project Manager",
+      "description": "Technical project manager with dual expertise in web development and project management. I oversee the full project lifecycle: from planning and development to testing, deployment and follow-up. My goal is to ensure successful delivery of high-quality solutions that meet client needs.",
+      "cta": {
+        "text": "Open my CV",
+        "link": "/assets/CV-Choeurtis.pdf"
+      },
+      "socials": [
+        { "url": "https://www.linkedin.com/in/choeurtis-tchounga-41218a1ab/", "iconClass": "fab fa-linkedin" },
+        { "url": "https://github.com/choeurtis18", "iconClass": "fab fa-github" }
+      ],
+      "scroll_text": "Click and Scroll - Click and Scroll - "
+    },
+    "about": {
+      "title1": "About",
+      "title2": "Me",
+      "text1": "I'm Choeurtis, a technical project manager and web developer passionate about IT. I have solid experience in project coordination, team leadership, schedule and budget tracking, as well as writing technical specifications and managing testing phases.",
+      "text2": "As a developer, I'm proficient in React, Node.js, Symfony, and SQL. This technical foundation allows me to propose and implement effective, tailored solutions for each client need.",
+      "image": {
+        "alt": "Programmer at work",
+        "src": "/assets/images/Programmeur au travail.jpg"
+      }
+    },
+    "experience": {
+      "subtitle": "A closer look at my professional background.",
+      "title": "My Professional Experience",
+      "slides": [
+        {
+          "title": "Technical Project Manager",
+          "company": "Spin Interactive",
+          "description": "I led end-to-end projects from initial scoping to delivery: managing teams, planning, tracking tickets, schedules and budgets. I wrote specifications, organized QA, ran tests, and maintained constant communication with clients to ensure the quality and consistency of deliverables."
+        },
+        {
+          "title": "UX Developer – Web Integrator",
+          "company": "B&B Hotels Group",
+          "description": "I handled A/B testing from design to deployment and performance analysis. I defined KPIs, managed the roadmap with international teams, and communicated daily in English. I also provided technical support, documentation, and handover processes."
+        },
+        {
+          "title": "Web Developer",
+          "company": "Vitacolo",
+          "description": "At Vitacolo, I dockerized various platforms used by the association and developed algorithms and endpoints to interconnect existing systems. I also managed databases for projects developed in PHP and Django."
+        }
+      ]
+    },
+    "projects": {
+      "title": "Some of My Projects",
+      "slides": [
+        {
+          "image": "/assets/projects/project1/image.jpg",
+          "alt": "PlayLink Image",
+          "category": "TECHNOLOGIES",
+          "technologies": "Flutter / React / Node.JS / PostgreSQL",
+          "title": "PlayLink",
+          "description": "PlayLink is a mobile app designed to liven up evenings with friends, family, or couples. It offers a variety of simple games that strengthen social bonds through deduction, quick thinking, bluffing, and debates.",
+          "cta": {
+            "text": "View Project",
+            "link": "/assets/projects/project1/cahierDesCharges.pdf"
+          }
+        },
+        {
+          "image": "/assets/projects/project2/image.jpg",
+          "alt": "EpiDrive Image",
+          "category": "TECHNOLOGIES",
+          "technologies": "Next.JS / Node.JS / PostgreSQL",
+          "title": "EpiDrive",
+          "description": "EpiDrive is a grocery drive platform enhanced with artificial intelligence to simplify and enrich the online shopping experience.",
+          "cta": {
+            "text": "View Project",
+            "link": "/assets/projects/project2/cahierDesCharges.pdf"
+          }
+        },
+        {
+          "image": "/assets/projects/project3/image.jpg",
+          "alt": "IZI REMPLA Image",
+          "category": "TECHNOLOGIES",
+          "technologies": "React / Node.JS / MySQL",
+          "title": "IZI REMPLA",
+          "description": "IZI Rempla is a web platform that connects healthcare professionals and their temporary replacements through an intuitive digital solution.",
+          "cta": {
+            "text": "View Project",
+            "link": "/assets/projects/project3/cahierDesCharges.pdf"
+          }
+        },
+        {
+          "image": "/assets/projects/project4/image.jpg",
+          "alt": "Cotisation Management Image",
+          "category": "TECHNOLOGIES",
+          "technologies": "React / Node.JS / MySQL",
+          "title": "Cotisation Management",
+          "description": "This responsive and secure web application helps the A.S.O association manage membership fees, centralize financial data, and track payments in real time.",
+          "cta": {
+            "text": "View Project",
+            "link": "/assets/projects/project4/cahierDesCharges.pdf"
+          }
+        },
+        {
+          "image": "/assets/projects/project5/image.jpg",
+          "alt": "Saline Royale Academy Image",
+          "category": "TECHNOLOGIES",
+          "technologies": "React / Node.JS / MySQL",
+          "title": "Saline Royale Academy",
+          "description": "The goal of this project was to redesign the Saline Royale Academy website to make it more modern and interactive. Gamification elements like quizzes and badges were added to boost learner engagement.",
+          "cta": {
+            "text": "View Project",
+            "link": "/assets/projects/project5/cahierDesCharges.pdf"
+          }
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact Me!",
+      "form": {
+        "action": "https://formspree.io/f/xqabgvpe",
+        "method": "POST",
+        "name": "Your Name",
+        "email": "Your Email",
+        "message": "Your Message",
+        "submit": "Send"
+      },
+      "footer": {
+        "brand": "Choeurtis.",
+        "socials": [
+          { "url": "https://www.linkedin.com/in/choeurtis-tchounga-41218a1ab/", "iconClass": "fab fa-linkedin" },
+          { "url": "https://github.com/choeurtis18", "iconClass": "fab fa-github" }
+        ],
+        "copyright": "© Copyright 2025 - Choeurtis. All Rights Reserved."
+      }
+    }
+  }
+}
