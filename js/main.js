@@ -58,16 +58,15 @@ function applyTranslations() {
             const li = document.createElement('li');
             const a = document.createElement('a');
 
-            a.href = "#"; // évite redirection locale
+            a.href = "#"; 
             a.className = 'banner-section-social-icon';
-            a.setAttribute('data-url', item.url); // stocke la vraie URL
+            a.setAttribute('data-url', item.url);
             a.innerHTML = `<i class="${item.iconClass}"></i>`;
 
-            // Ajout listener sécurisé
             a.addEventListener('click', (e) => {
                 e.preventDefault();
                 const url = a.getAttribute('data-url');
-                console.log(`Opening ${url}`);
+                console.log(`Opening URL: ${url}`);
                 window.open(url, '_blank');
             });
 
@@ -75,7 +74,6 @@ function applyTranslations() {
             container.appendChild(li);
         });
     });
-
 
     document.querySelector('#banner-section-scroll').textContent = t.banner.scroll_text;
 
@@ -157,25 +155,24 @@ function applyTranslations() {
         footerSocialsData.forEach((item, index) => {
             const li = document.createElement('li');
             const a = document.createElement('a');
-            
-            a.href = "#"; // <- lien neutre pour éviter toute redirection
+
+            a.href = "#"; // empêche la redirection native
             a.className = 'banner-section-social-icon';
-            a.setAttribute('data-url', item.url); // stocke la vraie URL dans un data-*
+            a.setAttribute('data-url', item.url); // lien réel dans data-*
+            a.setAttribute('aria-label', item.text); // pour accessibilité
             a.innerHTML = `<i class="${item.iconClass}"></i>`;
 
-            // Ajout du listener sur l'élément <a>
             a.addEventListener('click', (e) => {
-            e.preventDefault(); // empêche toute navigation locale
-            const url = a.getAttribute('data-url');
-            console.log(`Opening URL: ${url}`);
-            window.open(url, '_blank');
+                e.preventDefault(); // empêche navigation vers #
+                const url = a.getAttribute('data-url');
+                console.log(`Opening footer URL: ${url}`);
+                window.open(url, '_blank');
             });
 
             li.appendChild(a);
             container.appendChild(li);
         });
     });
-
 }
 
 
