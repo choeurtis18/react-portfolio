@@ -53,20 +53,29 @@ function applyTranslations() {
     const socials = document.querySelectorAll('#banner-section-socials');
     const socialsData = t.banner.socials;
 
-    socials.forEach((social) => {
+    socials.forEach((container) => {
         socialsData.forEach((item, index) => {
-            const id = `social-link-${item.text}`;
+            const li = document.createElement('li');
+            const a = document.createElement('a');
 
-            const html = `
-                <li>
-                    <a href="${item.url}" target="_blank" class="banner-section-social-icon" id="${id}" >
-                    <i class="${item.iconClass}"></i>
-                    </a>
-                </li>
-            `;
-            social.insertAdjacentHTML('beforeend', html);
+            a.href = "#"; // évite redirection locale
+            a.className = 'banner-section-social-icon';
+            a.setAttribute('data-url', item.url); // stocke la vraie URL
+            a.innerHTML = `<i class="${item.iconClass}"></i>`;
+
+            // Ajout listener sécurisé
+            a.addEventListener('click', (e) => {
+                e.preventDefault();
+                const url = a.getAttribute('data-url');
+                console.log(`Opening ${url}`);
+                window.open(url, '_blank');
+            });
+
+            li.appendChild(a);
+            container.appendChild(li);
         });
     });
+
 
     document.querySelector('#banner-section-scroll').textContent = t.banner.scroll_text;
 
@@ -144,50 +153,30 @@ function applyTranslations() {
     const footerIcons = document.querySelectorAll('#footer-section-icons');
     const footerSocialsData = t.contact.footer.socials;
 
-    footerIcons.forEach((social) => {
+    footerIcons.forEach((container) => {
         footerSocialsData.forEach((item, index) => {
-            const id = `footer-link-${item.text}`;
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            
+            a.href = "#"; // <- lien neutre pour éviter toute redirection
+            a.className = 'banner-section-social-icon';
+            a.setAttribute('data-url', item.url); // stocke la vraie URL dans un data-*
+            a.innerHTML = `<i class="${item.iconClass}"></i>`;
 
-            const html = `
-                <li>
-                    <a href="${item.url}" target="_blank" class="banner-section-social-icon" id="${id}" >
-                    <i class="${item.iconClass}"></i>
-                    </a>
-                </li>`;
-            social.insertAdjacentHTML('beforeend', html);
+            // Ajout du listener sur l'élément <a>
+            a.addEventListener('click', (e) => {
+            e.preventDefault(); // empêche toute navigation locale
+            const url = a.getAttribute('data-url');
+            console.log(`Opening URL: ${url}`);
+            window.open(url, '_blank');
+            });
+
+            li.appendChild(a);
+            container.appendChild(li);
         });
     });
+
 }
-
-window.addEventListener('click', function (event) {
-    const t = translations[currentLang];
-    const footerSocialsData = t.contact.footer.socials;
-
-    footerSocialsData.forEach((item, index) => {
-        const id = `footer-link-${item.text}`;
-        const selector = `#${id}`;
-
-        if (event.target.closest(selector)) {
-            console.log(`Opening URL ${item.url}`);
-            window.open(item.url, '_blank');
-            event.preventDefault();
-        }
-    });    
-
-    const socialsData = t.banner.socials;
-    socialsData.forEach((item, index) => {
-        const id = `social-link-${item.text}`;
-        const selector = `#${id}`;
-
-        if (event.target.closest(selector)) {
-            event.preventDefault();
-            console.log(`Opening URL ${item.url}`);
-            window.open(item.url, '_blank');
-            event.preventDefault();
-        }
-        
-    });    
-});
 
 
 $(function () {
